@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+
+.container{
+         width:30%;
+         margin: 0 auto;
+
+}
+
+legend{
+    padding: 10px;
+    color: white;
+    font-size:30px;
+}
+form label{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: white
+
+}
+
+form input{
+    display: block;
+    margin-top: 15px;
+    width:100%;
+    padding: 3px;
+
+    }
+
+    form textarea{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    form input[type="submit"]{
+        background-color: red;
+        padding:5px;
+        border-radius: 5px;
+        color:white;
+        outline:none;
+        border:none;
+    }
+    fieldset{
+        padding: 28px;
+    }
+
+    body{
+       background-color: #004d80;
+    }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <form  action="datasave.html" onsubmit=" return loginForm()">
+        <fieldset>
+        <legend>Login Form</legend>
+    
+         <label>Username: </label>
+        <input type="text" name="username" id="username">
+        <span id="username-error"></span>
+         <label>Password:</label>
+        <input type="text" name="password" id="password">
+        <span id="password-error"></span>
+        <label>Confirm Password:</label> 
+        <input type="text" name="confirm" id="confirm">
+        <span id="confirm-error"></span>
+        <label>contact:</label>
+        <input type="text" name="contact" id="contact">
+        <span id="contact-error"></span>
+        <label>Description:</label>
+        <textarea name="description" id="description"></textarea> 
+        <span id="description-error"></span>
+        <label>E-mail</label>
+        <input type="text" name="email" id="email">
+        <span id="email-error"></span>
+       <input type="submit" name="submit">
+        </fieldset>
+    </form>
+   </div>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- // let username = document.getElementById(id1);
+    //  let password = document.getElementById(id2);
+    /*let btn = document.querySelector("button");
+     btn.addEventListner("click",function(e){
+        e.preventDefault();
+       var username = document.forms[0][0].value;
+        // console.log(username.value);
+
+        if(username == "" || username == null) {
+            console.log("username is mendatory");
+            return false;
+        }
+     })/* -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
